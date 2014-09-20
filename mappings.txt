@@ -1,0 +1,114 @@
+{
+
+"template" : "*",
+"mappings" :
+{
+  "*": {
+    "properties": {
+      "hash": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "hashType": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "interaction": {
+        "properties": {
+          "author": {
+            "properties": {
+              "avatar": {
+                "type": "string",
+                "index": "not_analyzed"
+              },
+              "id": {
+                "type": "long"
+              },
+              "language": {
+                "type": "string",
+                "index": "not_analyzed"
+              },
+              "link": {
+                "type": "string",
+                "index": "not_analyzed"
+              },
+              "name": {
+                "type": "string",
+                "index": "not_analyzed"
+              },
+              "username": {
+                "type": "string",
+                "index": "not_analyzed"
+              }
+            }
+          },
+          "content": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "date",
+            "format": "EEE, dd MMM yyyy HH:mm:ss Z"
+          },
+          "geo": {
+            "properties": {
+              "latitude": {
+                "type": "double"
+              },
+              "longitude": {
+                "type": "double"
+              }
+            }
+          },
+          "hashtags": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "id": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "link": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "mention_ids": {
+            "type": "long"
+          },
+          "mentions": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "received_at": {
+            "type": "date"
+          },
+          "schema": {
+            "properties": {
+              "version": {
+                "type": "long"
+              }
+            }
+          },
+          "source": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "type": {
+            "type": "string",
+            "index": "not_analyzed"
+          }
+        }
+      },
+      "interactionId": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "subscriptionId": {
+        "type": "string",
+        "index": "not_analyzed"
+      }
+    }
+  }
+}
+
+}
+}
